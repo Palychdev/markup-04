@@ -164,7 +164,7 @@ body {
 
 .overlay {
 	max-width: 1600px;
-	height: 600px;
+	min-height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(to right,
@@ -195,8 +195,6 @@ body {
 }
 
 .button {
-	/* min-width: 200px; */
-	/* height: 50px; */
 	padding: 10px 32px;
 	margin-left: auto;
 	margin-right: auto;
@@ -268,7 +266,7 @@ body {
 }
 
 .picture {
-	height: 120px;
+	min-height: 120px;
 	margin-bottom: 30px;
 	background-color: var(--button-background);
 	border-radius: 4px;
@@ -313,7 +311,7 @@ body {
 
 .section.background {
 	max-width: 1600px;
-	height: 708px;
+	min-height: 708px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: var(--button-background);
@@ -370,9 +368,9 @@ body {
 }
 
 .social-icon:hover,
-.social-icon .icon:hover,
+.social-icon:hover .icon,
 .social-icon:focus,
-.social-icon .icon:focus {
+.social-icon:focus .icon {
 	background-color: var(--accent-color);
 	fill: var(--primary-white-color);
 }
@@ -536,8 +534,7 @@ body {
 
 .item-border {
 	display: block;
-	width: 370px;
-	/* height: 111px; */
+	width: 100%;
 	border-left: 1px solid #EEEEEE;
 	border-right: 1px solid #EEEEEE;
 	border-bottom: 1px solid #EEEEEE;
